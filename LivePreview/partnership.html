@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <link rel="stylesheet" href="./styles/partner-style.css">
+</head>
+<body class="overflow">
+
+    <!--navbar-->
+    <section id="hero">
+        <div class="container-main">
+            <div class="container-nav">
+            <div class="nav_bar">
+              <div class="nav_logo">
+                  <img class="ham-icon" src="./partner-images/ham-icon.svg">
+                  <img class="close-ham" src="./partner-images/close-ham.svg">
+                  <a href="./main-page.html"> <img class="brand__logo" src="./partner-images/nav-logo.svg"> </a>
+              </div>
+              <div class="nav_links">
+                  <ul>
+                      <li class="mobile-nav-li"><a href="./Artist-Ecommerce Ads.html">Artist-Commerce Ads</a></li>
+                      <li><a href="./about.html">About</a></li>
+                      <li><a href="./become a seller.html">Become A Seller</a></li>
+                      <li><a href="./partnership.html">Partner with us</a></li>
+                      <li><a href="#" class="nav-cart"><img src="./partner-images/cart-icon.svg"></a></li>
+                      <li><div class="join-btn"><a href="#">Join Beta</a></div></li>
+                  </ul>
+              </div>
+              <div class="mobile-cart"><img src="./partner-images/cart.svg"></div>
+            </div>
+            </div>
+    </section>
+
+    <!--partner-->
+    <section id="partner">
+        <div class="partner-main">
+            <h3>Lets be friends</h3>
+            <p>Interested in partnering with us?</p>
+            <div class="partner-form">
+                <form>
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" placeholder="Yaakoub El Hbari">
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="hello@yaakoubelhbari.com">
+                    <label for="Company name">Company name</label>
+                    <input type="text" placeholder="7bari inc.">
+                    <label for="How can we partner">How can we partner</label>
+                    <input class="description"  type="text" placeholder="Something here">
+                </form>
+            </div>
+            <div class="partner-submit-btn">
+                <a href="#">Submit</a>
+            </div>
+        </div>
+    </section>
+    <!---HR--->
+    <div class="container-main">
+    <hr>
+    </div>
+  <!---Footer--->
+  <div class="container-main">
+    <section id="footer">
+        <ul>
+            <li><div class="footer-head"><p>Categories</p></div></li>
+            <li><a href="#">Digital Artwork</a></li>
+            <li><a href="#">E-Books</a></li>
+            <li><a href="#">Video Games</a></li>
+            <li><a href="#">Video Templates & FX</a></li>
+            <li><a href="#">Audio Files</a></li>
+            <li><a href="#">Programming & Tech</a></li>
+        </ul>
+        <ul>
+        <li><div class="footer-head"><p>About</p></div></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Partnerships</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+         <ul>
+        <li><div class="footer-head"><p>Support</p></div></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+        <ul>
+            <li><div class="footer-head"><p>Community</p></div></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+            <ul>
+                <li><div class="footer-head"><p>Social</p></div></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Clubhouse</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!---Copyrights--->
+    <section id="copyright">
+        <div class="container-main">
+        <div class="copyright-main">
+        <a href="#">Payolie</a>
+        <p>Copyright 2021, made with ❤️ by <span>Yaakoub El Hbari</span></p>
+    </div>
+</div>
+    </section>
+
+        <!-----Join-Beta-Pop-up----->
+        <div class="modal"> 
+            <div class="modal-box" >
+              <div class="p-logo">
+                <a href="#"> <img src="./main-images/pop-logo.svg" alt=""> </a>
+              </div>
+              <div class="p-content">
+                  <h1>Sign up for Beta</h1>
+                  <p>Lorem Ipsum is simply dummy text of the printing<br class="line-break"> and typesetting industry.</p>
+              </div>
+              <div class="sub">
+                  <input type="text" placeholder="Enter your email">
+                  <a href="#" class="sub-btn">Subscribe</a>
+              </div>
+              <span class="closeModal">CLOSE</span>
+            </div>
+        </div>  
+      
+      
+      
+        <!--Scripts-->
+        <!--Navbar-->
+    <script>
+        const navMenu = document.querySelector('.nav_links');
+        const hamIcon = document.querySelector('.ham-icon');
+        const closeIcon = document.querySelector('.close-ham');
+  
+        hamIcon.addEventListener('click', function() {
+          navMenu.classList.add('show-nav');
+          hamIcon.classList.add('remove-ham-icon');
+          closeIcon.classList.add('close-ham-icon');
+        });
+  
+        closeIcon.addEventListener('click', function() {
+          navMenu.classList.remove('show-nav');
+          hamIcon.classList.remove('remove-ham-icon');
+          closeIcon.classList.remove('close-ham-icon');
+        });
+
+              ////Pop-Up////
+      var bodyScroll = document.getElementsByClassName('overflow')[0];
+      var modal = document.getElementsByClassName("modal")[0];
+      var modalBox = document.getElementsByClassName("modal-box")[0];
+
+      var open = document.getElementsByClassName("join-btn")[0];
+      var close = document.getElementsByClassName("closeModal")[0];
+
+      open.onclick = function() {
+        modal.style.display = "block";
+        bodyScroll.classList.add('hide-overflow');
+      }
+
+      window.onclick = function(e) {
+        if (e.target == modal) {
+          modal.style.display = "none";
+          bodyScroll.classList.remove('hide-overflow');
+        }
+      }
+      </script>
+</body>
